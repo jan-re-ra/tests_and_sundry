@@ -1,11 +1,9 @@
 name: Launch_me
 on:
-  push:
-    branches:
-      - "main"
   pull_request:
     branches:
       - "main"
+    types: [ labeled ]
 jobs:
   main:
     runs-on: ubuntu-latest
