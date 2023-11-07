@@ -7,7 +7,7 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
-    name: Expose info
+    name: Expose info further
     steps:
       - name: Test
         run: echo ${{ github.ref_name }}
