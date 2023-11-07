@@ -1,15 +1,12 @@
 name: Launch_me
 on:
-  push:
-    branches:
-      - "main"
   pull_request:
     branches:
       - "main"
 jobs:
   main:
     runs-on: ubuntu-latest
-    name: Expose info
+    name: Expose info further
     steps:
       - name: Test
         run: echo ${{ github.ref_name }}
